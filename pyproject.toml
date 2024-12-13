@@ -7,7 +7,8 @@ name = "ses-agency"
 version = "0.0.0"  # Supplied by dynamic versioning, no need to update.
 description = "Collection of AI Agents to build agencies for specific tasks"
 authors = [
-    "Renke Hohl <renke.hohl@schmidt-embedded-systems.de>"
+    "Renke Hohl <renke.hohl@schmidt-embedded-systems.de>",
+    "Berkay Özgür <berkay.oezguer@schmidt-embedded-systems.de>"
 ]
 readme = "README.md"
 license = "MIT"
