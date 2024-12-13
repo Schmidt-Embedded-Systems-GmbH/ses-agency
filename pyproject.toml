@@ -3,14 +3,17 @@ requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning>=1.0.0,<2.0.0"]
 build-backend = "poetry_dynamic_versioning.backend"
 
 [tool.poetry]
-name = "packagename"
+name = "ses-agency"
 version = "0.0.0"  # Supplied by dynamic versioning, no need to update.
-description = "My package description"
+description = "Collection of AI Agents to build agencies for specific tasks"
 authors = [
-    "name <name@uu.nl>"
+    "Renke Hohl <renke.hohl@schmidt-embedded-systems.de>"
 ]
 readme = "README.md"
 license = "MIT"
+packages = [
+    {include = "ses_agency"}
+]
 classifiers = [
     "Programming Language :: Python :: 3.8",
     "Programming Language :: Python :: 3.9",
@@ -19,11 +22,17 @@ classifiers = [
     "Programming Language :: Python :: 3.12",
     "License :: OSI Approved :: MIT License",
 ]
-keywords = ["some", "keywords", "here"]
+keywords = ["AI", "Agency", "Agents", "LLM"]
 
 [tool.poetry.dependencies]
-python = "^3.8"
-# numpy = ">=1.23"
+python = "^3.10"
+pydantic = "^2.4.2"
+transformers = "^4.45.2"
+torch = "^2.5.1"
+tqdm = "^4.66.1"
+numpy = ">=1.23"
+pydantic-ai = ">=0.0.0"
+openai = ">=1.57.0"
 
 [tool.poetry.group.test.dependencies]
 ruff = ">=0.2.2"
