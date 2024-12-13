@@ -1,1 +1,1 @@
-test_var = 42
+__version__ = "0.0.0"
